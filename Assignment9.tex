@@ -1,0 +1,163 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            
+    \usepackage{array}                                            
+    \usepackage{longtable}                                       
+    \usepackage{calc}                                             
+    \usepackage{multirow}                                         
+    \usepackage{hhline}                                       
+    \usepackage{ifthen}                                           
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{Matrix Theory EE5609\\
+}
+
+\author{\IEEEauthorblockN{Sandhya Addetla}\\
+\IEEEauthorblockA{PhD Artificial Inteligence Department} \\
+AI20RESCH14001\\
+ }
+
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section*{Assignment-9}
+\subsection*{Problem:}
+Let $M_n$ denote the vector space of all $n\times n$ real matrices. Which of the following is a linear subspaces of $M_n$ :-
+\begin{enumerate}
+\item $ V_1 = \{  A \in M_n : \text{ A is nonsingular} \}$\\
+\item $ V_2 = \{  A \in M_n : det(A) = 0 \}$\\
+\item $ V_3 = \{  A \in M_n : trace(A) = 0 \}$\\
+\item $ V_4 = \{  BA : A \in M_n\},$ where $ B$ is some fixed matrix in $ M_n$
+\end{enumerate}
+\subsection*{Solution:}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ | m{3cm} | m{5cm}| } \hline 
+%\begin{tabular}{|c|c|}\hline
+Vector space & Is it subspace to $M_n$?\\  \hline
+1)$V_1$: All non-singular matrices of $n \times n$ &   The matrices $I_{n\times n}$ and $-I_{n\times n}$ are non-singular matrices, but the sum $I_{n\times n}-I_{n\times n}$ is zero matrix and it is singular. \\& $\therefore V_1$ does not form subspace of $ M_n$.\\
+\hline
+2)$V_2$: All singular matrices of $n \times n$ &    The matrices $\myvec{1&0\\0&0} and \myvec{0 &0\\0&1}$  are singular matrices, but the sum is a non-singular matrix. \\& $\therefore V_2$ does not form subspace  $ M_n$.\\
+\hline
+3)$V_3$: All matrices of $n \times n$ with trace =0&    Let $ \vec{v_1}$ and $ \vec{v_2}$ be matrices with Trace = 0. \\& $Tr(\vec{v_1} + \alpha\vec{v_2}) = Tr(\vec{v_1}) + \alpha Tr(\vec{v_2}) = 0$. \\& $\therefore$ the vector space $V_3$  forms linear subspace of  $ M_n$.\\\hline
+4)$V_4$: $F_A$ = BA, where B  is some fixed matrix in $ M_n$&     Let $ \vec{v_1}$ and $ \vec{v_2}$ be matrices in the vector space $V_4$.\\& $F_{v_1 +\alpha v_2}$ = $B(\vec{v_1} + \alpha\vec{v_2})$\\& =$ B\vec{v_1} + \alpha B\vec{v_2}  =$\\& $ F_{v_1} + \alpha F_{v_2} $.\\& $\therefore V_4$   forms linear subspace of $ M_n$.\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}
